@@ -1,0 +1,26 @@
+{
+  "name": "office-addin-project",
+  "version": "1.0.0",
+  "description": "An Office Add-In project for enhancing productivity.",
+  "main": "src/taskpane/taskpane.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "office",
+    "addin",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "office-js": "^0.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

@@ -1,0 +1,2 @@
+(()=>{function n(){console.log("Command executed!")}document.addEventListener("DOMContentLoaded",(function(){const e=document.getElementById("commandButton");e&&e.addEventListener("click",n)}))})();
+//# sourceMappingURL=commands.bundle.js.map

@@ -1,0 +1,2 @@
+(()=>{async function e(){await Excel.run((async e=>{const o=e.workbook.getSelectedRange();o.format.fill.color="yellow",o.values=[["Hello World!"]],await e.sync()}))}Office.onReady((o=>{o.host===Office.HostType.Excel&&(document.getElementById("run").onclick=e)}))})();
+//# sourceMappingURL=taskpane.bundle.js.map

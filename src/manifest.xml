@@ -1,0 +1,31 @@
+<OfficeApp xmlns="http://schemas.microsoft.com/office/officeapp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+  <Id>YOUR-ADDIN-ID</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Insta</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Hello world"/>
+  <Description DefaultValue="Office Add-In"/>
+  <IconUrl DefaultValue="http://localhost:8080/assets/icon.png"/>
+  <HighResolutionIconUrl DefaultValue="http://localhost:8080/assets/icon@2x.png"/>
+  <SupportUrl DefaultValue="http://localhost:8080/support"/>
+  <AppDomains>
+    <AppDomain>http://localhost:8080</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document"/>
+    <Host Name="Workbook"/>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="ExcelApi" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="Taskpane">
+      <SourceLocation DefaultValue="http://localhost:8080/taskpane.html"/>
+      <RequestedHeight>600</RequestedHeight>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>
